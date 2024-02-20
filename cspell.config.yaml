@@ -1,0 +1,13 @@
+# CSpell Docs: https://cspell.org/
+
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries:
+  - en_US
+  - softwareTerms
+words:
+  - devcontainer
+  - devcontainers
+ignoreWords: []
+import: []

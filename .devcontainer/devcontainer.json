@@ -1,0 +1,47 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+  "name": "Python 3",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/git": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {
+      "version": "latest"
+    }
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/postCreateCommand.sh",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "EditorConfig.EditorConfig",
+        "elagil.pre-commit-helper",
+        "esbenp.prettier-vscode",
+        "KevinRose.vsc-python-indent",
+        "ms-python.python",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml",
+        "usernamehw.errorlens"
+      ]
+    }
+  },
+
+  "remoteEnv": {
+    "containerWorkspaceFolder": "${containerWorkspaceFolder}"
+  }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
