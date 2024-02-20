@@ -19,7 +19,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/postCreateCommand.sh",
+  "postCreateCommand": "bash ${containerWorkspaceFolder}/.devcontainer/postCreateCommand.sh",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -31,6 +31,7 @@
         "esbenp.prettier-vscode",
         "KevinRose.vsc-python-indent",
         "ms-python.python",
+        "njpwerner.autodocstring",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml",
         "usernamehw.errorlens"
