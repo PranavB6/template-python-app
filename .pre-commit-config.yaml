@@ -6,7 +6,7 @@ repos:
     rev: v4.5.0
     hooks:
       - id: check-json
-        exclude: 'devcontainer\.json'
+        exclude: 'devcontainer\.json' # regular expression
       - id: check-yaml
       - id: check-toml
       - id: end-of-file-fixer
